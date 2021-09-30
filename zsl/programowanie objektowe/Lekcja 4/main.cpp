@@ -13,18 +13,18 @@ class Worker {
 
 		void showData();
 		
-		void setId(unsigned int id1, string name1, string surname1, short unsigned int birthdate1, short unsigned int birthdate2, short unsigned int birthdate3) {
-			id=id1;
-			name=name1;
-			surname=surname1;
-			birthdate.dd=birthdate1;
-			birthdate.mm=birthdate2;
-			birthdate.yyyy=birthdate3;
+		void setId(unsigned int id, string name, string surname, short unsigned int dd, short unsigned int mm, short unsigned int yyyy) {
+			Worker::id=id;
+			Worker::name=name;
+			Worker::surname=surname;
+			Worker::birthdate.dd=dd;
+			Worker::birthdate.mm=mm;
+			Worker::birthdate.yyyy=yyyy;
 		};
 };
 
 void Worker::showData() {
-			cout << "Dane pracownika:" << endl << "ID: " << id << "Imiê i nazwisko: " << name << " " << surname << endl << "Data urodzenia: " << birthdate.dd << "-" << birthdate.mm << "-" << birthdate.yyyy << endl;
+			cout << "Dane pracownika:" << endl << "ID: " << id << "Imie i nazwisko: " << name << " " << surname << endl << "Data urodzenia: " << birthdate.dd << "-" << birthdate.mm << "-" << birthdate.yyyy << endl;
 	};
 
 int main(int argc, char** argv) {
