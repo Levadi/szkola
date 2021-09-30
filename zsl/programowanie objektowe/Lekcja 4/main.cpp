@@ -13,13 +13,11 @@ class Worker {
 
 		void showData();
 		
-		void setId(unsigned int id, string name, string surname, short unsigned int dd, short unsigned int mm, short unsigned int yyyy) {
+		void setId(unsigned int id, string name, string surname, Date birthdate) {
 			Worker::id=id;
 			Worker::name=name;
 			Worker::surname=surname;
-			Worker::birthdate.dd=dd;
-			Worker::birthdate.mm=mm;
-			Worker::birthdate.yyyy=yyyy;
+			Worker::birthdate=birthdate;
 		};
 };
 
