@@ -13,7 +13,7 @@ class Worker {
 
 		void showData();
 		
-		void setId(unsigned int id, string name, string surname, Date birthdate) {
+		void setData(unsigned int id, string name, string surname, Date birthdate) {
 			Worker::id=id;
 			Worker::name=name;
 			Worker::surname=surname;
@@ -28,7 +28,7 @@ void Worker::showData() {
 int main(int argc, char** argv) {
 	setlocale(LC_CTYPE, "polish");
 	Worker pracownik;
-	pracownik.setId(100, "Janusz", "Nowak", 16, 9, 2021);
+	pracownik.setData(100, "Janusz", "Nowak", {16, 9, 2021});
 	pracownik.showData();
 	return 0;
 }
